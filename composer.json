@@ -17,13 +17,19 @@
     ],
     "require":      {
         "symfony/framework-bundle": "2.*",
-        "knplabs/gaufrette":        "0.2.*@dev"
+        "knplabs/gaufrette": "dev-phpseclib@dev"
     },
     "require-dev": {
         "symfony/yaml": "2.*",
         "symfony/console": "2.*",
         "phpunit/phpunit": "3.7.*"
     },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url":  "https://github.com/william327/Gaufrette.git"
+        }
+    ],
     "autoload":     {
         "psr-0": {
             "Knp\\Bundle\\GaufretteBundle": ""
